@@ -1,6 +1,7 @@
 package com.example.ad8;
 
 import com.example.ad8.util.HttpUtil;
+import com.example.ad8.util.OkHttpUtil;
 
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONObject;
@@ -9,10 +10,10 @@ import org.junit.Test;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.Future;
 
 import okhttp3.Call;
 import okhttp3.Callback;
+import okhttp3.Request;
 import okhttp3.Response;
 
 public class HttpUtilTest {
@@ -62,6 +63,22 @@ public class HttpUtilTest {
         }
 
         System.out.println(resp);
+    }
+
+    @Test
+    public void okHttpCallbackTest(){
+        OkHttpUtil.ResultCallback resultCallback = new OkHttpUtil.ResultCallback() {
+            @Override
+            public void onError(Request request, Exception e) {
+
+            }
+
+            @Override
+            public void onResponse(Object response) {
+
+            }
+        };
+        OkHttpUtil.getDataAsync("http://localhost:8001/timeseries/aggregate/query/ids", );
     }
 
 }
