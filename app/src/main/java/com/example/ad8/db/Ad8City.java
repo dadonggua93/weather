@@ -1,5 +1,6 @@
 package com.example.ad8.db;
 
+
 import org.litepal.crud.LitePalSupport;
 
 import lombok.Data;
