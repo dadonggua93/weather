@@ -78,7 +78,7 @@ public class HttpUtilTest {
 
             }
         };
-        OkHttpUtil.getDataAsync("http://localhost:8001/timeseries/aggregate/query/ids", );
+        OkHttpUtil.getDataAsync("http://localhost:8001/timeseries/aggregate/query/ids", resultCallback);
     }
 
 }
