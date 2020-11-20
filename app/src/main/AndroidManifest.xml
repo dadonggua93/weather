@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:name="org.litepal.LitePalApplication"
+        android:name="com.example.ad8.compoent.MyLitepalApplication"
         android:theme="@style/Theme.Ad8">
 
         <activity android:name=".activity.LocationActivity" />

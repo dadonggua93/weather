@@ -53,6 +53,11 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
     testCompile 'org.json:json:20200518'
+// https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.0'
+
+    // fastjson
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.70'
 
 
 }
